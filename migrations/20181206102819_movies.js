@@ -5,6 +5,7 @@ exports.up = function(knex, Promise) {
       movie.string('director', [50])
       movie.string('year', [4])
       movie.integer('rating')
+      movie.string('poster_url')
   })
 };
 
