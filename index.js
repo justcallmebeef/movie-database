@@ -26,4 +26,10 @@ app.delete('/:id', (req, res) => {
     queries.deleteMovie(id).then(res.sendStatus(204))
 })
 
+app.put('/:id', (req, res) => {
+    body = req.body
+    id = req.params.id
+    queries.updateMovie(id, body).then(response => res.send(response[0]))
+})
+
 app.listen(port)
