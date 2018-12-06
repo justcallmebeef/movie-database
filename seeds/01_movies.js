@@ -1,7 +1,7 @@
 exports.seed = function(knex, Promise) {
-  return knex('movie_db').del()
+  return knex('movies').del()
     .then(function () {
-      return knex('movie_db').insert([
+      return knex('movies').insert([
         {
           title: "Schizopolis", 
           director: "Steven Soderbergh",
