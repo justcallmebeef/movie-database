@@ -7,8 +7,8 @@ exports.up = function(knex, Promise) {
       movie.integer('rating')
       movie.string('poster_url')
   })
-};
+}
 
 exports.down = function(knex, Promise) {
   return knex.schema.dropTableIfExists('movies')
-};
+}

@@ -38,6 +38,6 @@ exports.seed = function(knex, Promise) {
           rating: 2,
           poster_url: "https://i.etsystatic.com/11328982/r/il/3ea12c/1037070241/il_570xN.1037070241_nsr7.jpg"
         }
-      ]);
-    });
-};
+      ])
+    })
+}
